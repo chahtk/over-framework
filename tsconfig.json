@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": false,
+    "useDefineForClassFields": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+    "types": ["./types"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["assets/*"],
+      "@myTypes/*": ["types/*"],
+      "@web/*": ["src/WebComponent/*"],
+      "@api/*": ["src/api/*"],
+      "@util/*": ["src/util/*"],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.svelte",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "types/*"
+  ],
+  // "typeRoots": ["node_modules/@types"],
+  "exclude": ["node_modules"]
+}

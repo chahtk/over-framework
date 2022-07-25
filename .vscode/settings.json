@@ -1,0 +1,21 @@
+{
+  "workbench.colorTheme": "Night Owl",
+  "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": true,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "vetur.completion.tagCasing": "initial",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.watcherExclude": {
+    "**/node_modules/*/**": false
+  },
+  "editor.codeActionsOnSave": {
+    // For ESLint
+    "source.fixAll.eslint": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.settings.useSplitJSON": true,
+}

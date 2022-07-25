@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+:root {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  cursor: default;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  tab-size: 4;
+  --bg-color: #0c0c0c;
+  --primary-color: #3bd857;
+  --cell-color: #161a26;
+  --border-color: #5a606e;
+}
+html,
+body {
+  height: 100%;
+  background-color: var(--bg-color);
+  color: white;
+  overflow-x: hidden;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  border: 1px solid hsl(0, 72%, 62%);
+  padding: 4px 10px;
+  & + & {
+    margin-left: 20px;
+  }
+  &:hover{
+    background-color: hsl(0, 72%, 62%);
+  }
+}
+header {
+  margin: 20px 10px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#gnb {
+  height: 68px;
+}
+
+/* lounge 하단의 sidebar */
+.post-aside {
+  position: sticky;
+  height: 900px;
+  top: 174px;
+  z-index: 1;
+  > * {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 910px) {
+    display: none;
+  }
+}
+
+
+/* naver game classes */
+.se-image, .se-module-image {
+  margin: 10px 0;
+}
+
+.se-text-paragraph-align-center {
+  text-align: center;
+}
+
+.se-text-paragraph-align-right {
+  text-align: right;
+}
+
+.se-fs-fs11 {
+  font-size: 11px;
+}
+
+.se-fs-fs13 {
+  font-size: 13px;
+}
+
+.se-fs-fs15 {
+  font-size: 15px;
+}
+
+.se-fs-fs16 {
+  font-size: 16px;
+}
+
+.se-fs-fs19 {
+  font-size: 19px;
+}
+
+.se-fs-fs24 {
+  font-size: 24px;
+}
+
+.se-fs-fs28 {
+  font-size: 28px;
+}
+
+.se-fs-fs30 {
+  font-size: 30px;
+}
+
+.se-fs-fs34 {
+  font-size: 34px;
+}
+
+.se-fs-fs38 {
+  font-size: 38px;
+}
+
+.se-video, .se-viewer {
+  position: relative;
+}
