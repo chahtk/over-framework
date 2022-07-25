@@ -12,7 +12,6 @@ class CustomButton extends HTMLElement {
       cursor: "pointer",
     };
     const styled = replaceStyle(BUTTON_STYLE);
-    console.log(styled);
     this.setAttribute("style", styled);
     this.addEventListener("click", () => alert("wow"));
   }
