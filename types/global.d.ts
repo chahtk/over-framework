@@ -11,6 +11,9 @@ export declare global {
   namespace JSX {
     interface IntrinsicElements {
       "custom-button": any;
+      "node-router": any;
+      "node-component": any;
+      "structure-layout": any;
     }
   }
 }

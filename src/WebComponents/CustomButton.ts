@@ -1,4 +1,4 @@
-import { replaceStyle } from "@/util/replace";
+import { replaceStyleObject2String } from "@/util/replace";
 
 class CustomButton extends HTMLElement {
   constructor() {
@@ -11,7 +11,7 @@ class CustomButton extends HTMLElement {
       padding: "4px",
       cursor: "pointer",
     };
-    const styled = replaceStyle(BUTTON_STYLE);
+    const styled = replaceStyleObject2String(BUTTON_STYLE);
     this.setAttribute("style", styled);
     this.addEventListener("click", () => alert("wow"));
   }
